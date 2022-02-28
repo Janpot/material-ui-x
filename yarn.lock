@@ -4440,10 +4440,10 @@
   resolved "https://registry.yarnpkg.com/@types/braces/-/braces-3.0.0.tgz#7da1c0d44ff1c7eb660a36ec078ea61ba7eb42cb"
   integrity sha512-TbH79tcyi9FHwbyboOKeRachRq63mSuWYXOflsNO9ZyE5ClQ/JaozNKl+aWUq87qPNsXasXxi2AbgfwIJ+8GQw==
 
-"@types/chai-dom@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@types/chai-dom/-/chai-dom-0.0.10.tgz#0a1d454a5b6a153b3e49b7d4c8354acc0b9f412e"
-  integrity sha512-C5M5ht5visUd0fEB+drAL4IoqhPZnF9Ts9N+FnRU+IdxHHNGzeqquEtdhZAjLi0t4uzKnqS5lU2SuTwG9d6+8w==
+"@types/chai-dom@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@types/chai-dom/-/chai-dom-0.0.12.tgz#fdd7a52bed4dd235ed1c94d3d2d31d4e7db1d03a"
+  integrity sha512-4rE7sDw713cV61TYzQbMrPjC4DjNk3x4vk9nAVRNXcSD4p0/5lEEfm0OgoCz5eNuWUXNKA0YiKiH/JDTuKivkA==
   dependencies:
     "@types/chai" "*"
 
