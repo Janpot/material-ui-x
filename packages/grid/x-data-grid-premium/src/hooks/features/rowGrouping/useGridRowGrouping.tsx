@@ -33,7 +33,9 @@ import { GridRowGroupableColumnMenuItems } from '../../../components/GridRowGrou
 import { GridRowGroupingColumnMenuItems } from '../../../components/GridRowGroupingColumnMenuItems';
 import { GridInitialStatePremium } from '../../../models/gridStatePremium';
 
-const Divider = () => <MuiDivider onClick={(event) => event.stopPropagation()} />;
+function Divider() {
+  return <MuiDivider onClick={(event) => event.stopPropagation()} />;
+}
 
 export const rowGroupingStateInitializer: GridStateInitializer<
   Pick<DataGridPremiumProcessedProps, 'rowGroupingModel' | 'initialState'>
@@ -265,7 +267,7 @@ export const useGridRowGrouping = (
       columnsLookup: gridColumnLookupSelector(apiRef),
     });
 
-    if (!areGroupingRulesEqual(rulesOnLastRowTreeCreation, groupingRules)) {
+    if (!areGroupingRulesEqual(rulesOnLastRowTreeCreation || [], groupingRules)) {
       apiRef.current.unstable_caches.rowGrouping.rulesOnLastRowTreeCreation = groupingRules;
       apiRef.current.unstable_requestPipeProcessorsApplication('hydrateColumns');
       setStrategyAvailability(apiRef, props.disableRowGrouping);
