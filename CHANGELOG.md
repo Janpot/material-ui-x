@@ -49,7 +49,7 @@ Same changes as in `@mui/x-data-grid-pro@7.0.0-beta.4`.
    <DateField
   -  selectedSections={{ startIndex: 0, endIndex: 0 }}
   +  selectedSections={0}
-  
+
      // If the field has 3 sections
   -  selectedSections={{ startIndex: 0, endIndex: 2 }}
   +  selectedSections="all"
@@ -68,20 +68,20 @@ Same changes as in `@mui/x-data-grid-pro@7.0.0-beta.4`.
   +     enableAccessibleFieldDOMStructure,
         // ... rest of the props you are using
       } = props;
-  
+
       return ( /* Some UI to edit the date */ )
     }
-  
+
     function MyCustomField(props) {
       const fieldResponse = useDateField<Dayjs, false, typeof textFieldProps>({
         ...props,
   +     // If you only support one DOM structure, we advise you to hardcode it here to avoid unwanted switches in your application
   +     enableAccessibleFieldDOMStructure: false,
       });
-  
+
       return <MyCustomTextField ref={ref} {...fieldResponse} />;
     }
-  
+
     function App() {
       return <DatePicker slots={{ field: MyCustomField }} />;
     }
@@ -2394,8 +2394,8 @@ Same changes as in `@mui/x-date-pickers@6.19.5`.
 
 - [docs] Clarify Pickers 'Component composition' section (#12147) @LukasTy
 - [docs] Fix 301 redirection to StackBlitz @oliviertassinari
-- [docs] Fix 301 to Material UI @oliviertassinari
-- [docs] Fix 301 to Material UI @oliviertassinari
+- [docs] Fix 301 to Material UI @oliviertassinari
+- [docs] Fix 301 to Material UI @oliviertassinari
 - [docs] Fix 404 links to translation source @oliviertassinari
 - [docs] Fix dead link to translations @oliviertassinari
 - [docs] Fix the Treemap illustration (#12189) @danilo-leal
@@ -4395,7 +4395,7 @@ Same changes as in `@mui/x-date-pickers@6.9.0`.
 - [docs] Fix random screenshot generation (#9364) @cherniavskii
 - [docs] Remove random generation from chart doc example (#9343) @flaviendelangle
 - [docs] Sync h1 with sidenav link (#9252) @oliviertassinari
-- [docs] Use the mui-x Stack Overflow tag (#9352) @oliviertassinari
+- [docs] Use the mui-x Stack Overflow tag (#9352) @oliviertassinari
 
 ### Core
 
