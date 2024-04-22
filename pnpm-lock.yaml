@@ -15,9 +15,6 @@ patchedDependencies:
   babel-plugin-replace-imports@1.0.2:
     hash: h4cab4lqksemkw6ln3l3h4s77e
     path: patches/babel-plugin-replace-imports@1.0.2.patch
-  date-fns-jalali@2.13.0-0:
-    hash: knk56uiq6xxn77bv6lgrgre7si
-    path: patches/date-fns-jalali@2.13.0-0.patch
   karma-mocha@2.0.1:
     hash: r6idlcdpax26bbzwxyjicxb5ra
     path: patches/karma-mocha@2.0.1.patch
@@ -513,8 +510,8 @@ importers:
         specifier: ^2.30.0
         version: 2.30.0
       date-fns-jalali:
-        specifier: ^2.21.3-1
-        version: 2.21.3-1
+        specifier: ^2.13.0-0
+        version: 2.13.0-0
       dayjs:
         specifier: ^1.11.10
         version: 1.11.10
@@ -1050,7 +1047,7 @@ importers:
         version: 2.30.0
       date-fns-jalali:
         specifier: ^2.13.0-0
-        version: 2.13.0-0(patch_hash=knk56uiq6xxn77bv6lgrgre7si)
+        version: 2.13.0-0
       dayjs:
         specifier: ^1.11.10
         version: 1.11.10
@@ -1108,7 +1105,7 @@ importers:
         version: 2.1.0
       date-fns-jalali:
         specifier: ^2.13.0-0
-        version: 2.13.0-0(patch_hash=knk56uiq6xxn77bv6lgrgre7si)
+        version: 2.13.0-0
       moment-hijri:
         specifier: ^2.1.2
         version: 2.1.2
@@ -8215,14 +8212,8 @@ packages:
       whatwg-url: 14.0.0
     dev: true
 
-  /date-fns-jalali@2.13.0-0(patch_hash=knk56uiq6xxn77bv6lgrgre7si):
+  /date-fns-jalali@2.13.0-0:
     resolution: {integrity: sha512-yjlI9O18Z6ryGNagryrLO8OQ+3rishM3+A0UOX2UX10cWMn2NTlQcQ+ywTEJvF5IJz0FwX/slt2nCcpyQ/c8gw==}
-    patched: true
-
-  /date-fns-jalali@2.21.3-1:
-    resolution: {integrity: sha512-Sgw1IdgCgyWDKCpq6uwAu24vPMOtvmcXXXuETr1jQO/aVj4h23XAltcP7hLbo+osqoiJnPmiydbI/q1W7TYAjA==}
-    engines: {node: '>=0.11'}
-    dev: false
 
   /date-fns@2.30.0:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
